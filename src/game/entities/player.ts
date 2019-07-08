@@ -21,7 +21,7 @@ class Player extends ActiveEntity{
     public act() {
         this.game.engine.lock();
         this.game.map.drawFOVFromLocation(this.x, this.y, PLAYER.VISION_RADIUS);
-        window.document.addEventListener("keydown", this.handleEvent);
+        window.document.addEventListener('keydown', this.handleEvent);
     }
 
     private handleEvent = (e: any) => {
@@ -47,7 +47,7 @@ class Player extends ActiveEntity{
     }
 
     private endPlayerTurn() {
-        window.document.removeEventListener("keydown", this.handleEvent);
+        window.document.removeEventListener('keydown', this.handleEvent);
         this.game.map.clearDisplay();
         this.game.engine.unlock();
     }

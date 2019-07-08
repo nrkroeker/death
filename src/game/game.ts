@@ -89,9 +89,9 @@ class Game {
 
     private createNewEnemyRandomly() {
         switch (ROT.RNG.getUniformInt(1, ENEMY_TYPE_COUNT)) {
-            case(1):
+            case (1):
                 return this.generateActiveEntity(Enemies.Bat);
-            case(2):
+            case (2):
                 return this.generateActiveEntity(Enemies.Zombie);
             default:
                 return this.generateActiveEntity(Enemies.Bat);

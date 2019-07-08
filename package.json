@@ -1,39 +1,43 @@
 {
-  "name": "death",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://blakemsteel.github.io/death",
-  "dependencies": {
-    "@types/react": "^16.8.22",
-    "@types/rot-js": "^0.6.5",
-    "gh-pages": "^2.0.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "rot-js": "^2.1.0",
-    "typescript": "^3.5.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "death",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://blakemsteel.github.io/death",
+    "dependencies": {
+        "@types/react": "^16.8.22",
+        "@types/rot-js": "^0.6.5",
+        "gh-pages": "^2.0.1",
+        "mobx": "^5.10.1",
+        "mobx-react": "^6.1.1",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-scripts": "3.0.1",
+        "rot-js": "^2.1.0",
+        "router5": "^7.0.2",
+        "router5-plugin-browser": "^7.0.2",
+        "typescript": "^3.5.2"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }

@@ -126,7 +126,7 @@ class Map {
         for (let x = 0; x < this._map.length; x++) {
             for (let y = 0; y < this._map[x].length; y++) {
                 if (!this._map[x][y].isCollideable()) {
-                    freeTiles.push(x + "," + y);
+                    freeTiles.push(x + ',' + y);
                 }
             }
         }
@@ -198,7 +198,7 @@ class Map {
             return false;
         }
         const freeCellIndex = ROT.RNG.getUniformInt(0, freeTiles.length - 1);
-        const xyParts = freeTiles[freeCellIndex].split(",");
+        const xyParts = freeTiles[freeCellIndex].split(',');
         freeTiles.splice(freeCellIndex, 1);
         const x = parseInt(xyParts[0]);
         const y = parseInt(xyParts[1]);
@@ -217,7 +217,7 @@ class Map {
         }
 
         const freeCellIndex = ROT.RNG.getUniformInt(0, freeTiles.length - 1);
-        const xyParts = freeTiles[freeCellIndex].split(",");
+        const xyParts = freeTiles[freeCellIndex].split(',');
         freeTiles.splice(freeCellIndex, 1);
         const x = parseInt(xyParts[0]);
         const y = parseInt(xyParts[1]);

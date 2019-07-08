@@ -1,6 +1,6 @@
-import Entity, { IEntityProps } from "./entity";
-import Game from "../game";
-import * as ROT from "rot-js";
+import Entity, { IEntityProps } from './entity';
+import Game from '../game';
+import * as ROT from 'rot-js';
 
 export interface IActiveEntityProps {
     x: number,
@@ -47,17 +47,17 @@ abstract class ActiveEntity extends Entity {
         var astar = new ROT.Path.AStar(x, y, passableCallback, { topology });
 
         var path: Array<[number, number]> = [];
-        var pathCallback = function(x: number, y: number) {
+        var pathCallback = function (x: number, y: number) {
             path.push([x, y]);
         }
         astar.compute(this.x, this.y, pathCallback);
 
         path.shift(); // Remove current position
         if (path.length == 0) {
-            
+
         } else if (path.length == 1) {
-            alert("Game over - you were captured!");
-            this.game.engine.lock();
+            alert('Game over - you were captured!');
+            this.game.engine.start();
         } else {
             x = path[0][0];
             y = path[0][1];
@@ -83,7 +83,7 @@ abstract class ActiveEntity extends Entity {
         this.removeSelf();
     }
 
-    public actUponByEnemy() {}
+    public actUponByEnemy() { }
 
     public getX() {
         return this.x;
